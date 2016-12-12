@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Polynomialcalc : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Polynomialcalc</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/CurtisKreidler/PolynomialCalc">View on GitHub</a>
+
+          <h1 id="project_title">Polynomialcalc</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/CurtisKreidler/PolynomialCalc/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/CurtisKreidler/PolynomialCalc/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="polynomialcalc" class="anchor" href="#polynomialcalc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PolynomialCalc</h1>
+
+<hr>
+
+<p>This is a bit of an abstract project. This bit of code add or multiply two txt files that have polynomials together
+that are passed in through commandline arguements.</p>
+
+<p>If you want to add or multipy your own polynomials the format in the txt files is:
+'degree' 'coefficient'(corresponding to degree - 1) 'coefficient'(corresponding to degree - n) ... 
+'coefficient'(corresponding to degree 0)</p>
+
+<p>This is easier to see as an example:</p>
+
+<p>(X^2) - (X) + 3 -&gt; <code>3 1 -1 3</code> or (X^6) - (5X^3) + 4 -&gt; <code>7 1 0 0 0 -5 0 0 4</code></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li>Clone the repository</li>
+<li>Compile with <code>g++ -std=c++11 -o poly poly.cc</code> or <code>g++ -std=c++11 -o mult mult.cc</code>
+</li>
+<li>Run with <code>./poly test0.txt test1.txt</code> or <code>./mult test0.txt test1.txt</code>
+</li>
+</ol>
+
+<h2>
+<a id="future-plans" class="anchor" href="#future-plans" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Future Plans</h2>
+
+<ul>
+<li>Convert all math to <code>long</code> from <code>int</code> to do harder polynomial math</li>
+<li>Handle Over and underflows easier</li>
+<li>Expand to do more polynomial math</li>
+</ul>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>Collaborators: Adam Karpowich and Mike Mizikar</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Polynomialcalc maintained by <a href="https://github.com/CurtisKreidler">CurtisKreidler</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
